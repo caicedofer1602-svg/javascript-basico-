@@ -26,9 +26,11 @@ function clasificarTriangulo(lado1, lado2, lado3) {
 	// - "Isósceles" si exactamente dos lados son iguales
 	// - "Escaleno" si todos los lados son diferentes
 	// - "No es triángulo" si no cumple la propiedad triangular
-	// Tu código:
+	// Tu código: 
+	if (lado1 + lado2 <= lado3 || lado1 + lado3 <= lado2 || lado2 + lado3 <= lado1) {return "No es triángulo"
 }
-
+if (lado1 === lado2 && lado2 === lado3) return "Equilátero";
+if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) return "Isósceles"; return "Escaleno"; }
 // Test 3:
 function calcularDescuento(precio, esMiembro, esFinDeSemana) {
 	// Recibe: precio (número), esMiembro (boolean), esFinDeSemana (boolean)
