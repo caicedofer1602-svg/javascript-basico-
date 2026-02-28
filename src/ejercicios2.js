@@ -40,7 +40,11 @@ function calcularDescuento(precio, esMiembro, esFinDeSemana) {
 	// - Si no cumple ninguna: sin descuento (0%)
 	// Devuelve el precio final después de aplicar el descuento.
 	// Tu código:
-}
+	if (esMiembro && esFinDeSemana) {return precio * 0.7; // 30% descuento
+	} else if (esMiembro || esFinDeSemana) { return precio * 0.85; // 15% descuento 
+    } 
+	return precio; // sin descuento 
+} 
 
 // Test 4:
 function obtenerDiaSemana(numero) {
